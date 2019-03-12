@@ -1,0 +1,144 @@
+1)    Web.Telegram.org
+      
+      Request:  Request URL: https://web.telegram.org/
+                Request Method: GET
+                Status Code: 200 OK (from ServiceWorker)
+                Referrer Policy: no-referrer-when-downgrade
+      
+      Respone:  Cache-Control: max-age=3600
+                Connection: keep-alive
+                Content-Type: text/html
+                Date: Sun, 17 Feb 2019 13:05:30 GMT
+                ETag: W/"5a2afc2d-633"
+                Expires: Sun, 17 Feb 2019 14:05:30 GMT
+                Last-Modified: Fri, 08 Dec 2017 20:55:09 GMT
+                Server: nginx/1.12.2
+                Strict-Transport-Security: max-age=35768000
+                Transfer-Encoding: chunked
+      ______________________________________________
+      
+      Github.com
+      
+      Request:  Request URL: https://github.com/
+                Request Method: GET
+                Status Code: 200 OK
+                Remote Address: 140.82.118.3:443
+                Referrer Policy: no-referrer-when-downgrade
+      
+      Respone:  Cache-Control: max-age=0, private, must-revalidate
+                Content-Security-Policy: default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com www.google-analytics.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com wss://live.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com
+                Content-Type: text/html; charset=utf-8
+                Date: Sun, 17 Feb 2019 15:03:17 GMT
+                ETag: W/"83efb10b5d12e9c7a82bf2e0caf02af7"
+                Expect-CT: max-age=2592000, report-uri="https://api.github.com/_private/browser/errors"
+                Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+                Server: GitHub.com
+                Status: 200 OK
+                Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+                Transfer-Encoding: chunked
+                Vary: X-PJAX
+                Vary: Accept-Encoding
+                X-Content-Type-Options: nosniff
+                X-Frame-Options: deny
+                X-GitHub-Request-Id: EDED:3E702:6065D9A:946B167:5C6977B4
+                X-Request-Id: 4614c3ff-8d35-4d87-bc21-b12d5f948cab
+                X-XSS-Protection: 1; mode=block
+      ______________________________________________
+      
+      Google.com
+      
+      Request:  Request URL: http://google.com/
+                Request Method: GET
+                Status Code: 301 Moved Permanently
+                Remote Address: 74.125.232.32:80
+                Referrer Policy: no-referrer-when-downgrade
+                Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+                Accept-Encoding: gzip, deflate
+                Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+                Connection: keep-alive
+      
+      Response: Cache-Control: public, max-age=2592000
+                Content-Length: 219
+                Content-Type: text/html; charset=UTF-8
+                Date: Sun, 17 Feb 2019 14:42:15 GMT
+                Expires: Tue, 19 Mar 2019 14:42:15 GMT
+                Location: http://www.google.com/
+                Server: gws
+                X-Frame-Options: SAMEORIGIN
+                X-XSS-Protection: 1; mode=block
+      ______________________________________________
+      
+      Html5book.ru
+      
+      Request:  Request URL: https://html5book.ru/html-html5/
+                Request Method: GET
+                Status Code: 200 OK
+                Remote Address: 46.36.219.181:443
+                Referrer Policy: origin
+      
+      Response: Connection: keep-alive
+                Content-Type: text/html; charset=UTF-8
+                Date: Sun, 17 Feb 2019 15:23:35 GMT
+                Link: <https://html5book.ru/wp-json/>; rel="https://api.w.org/", <https://html5book.ru/?p=3800>; rel=shortlink
+                Server: nginx/1.12.2
+                Strict-Transport-Security: max-age=31536000;
+                Transfer-Encoding: chunked
+                Vary: Accept-Encoding
+      ______________________________________________
+      
+      Youtube.com
+      
+      Request:  Request URL: https://www.youtube.com/
+                Request Method: GET
+                Status Code: 200 
+                Remote Address: 74.125.232.39:443
+                Referrer Policy: no-referrer-when-downgrade
+               
+      Response: alt-svc: quic=":443"; ma=2592000; v="44,43,39"
+                cache-control: no-cache
+                content-encoding: br
+                content-security-policy: connect-src https:; default-src 'self' 'unsafe-inline' 'unsafe-eval' https:; img-src https: data:; media-src https: blob:; report-uri https://www.youtube.com/csp_204?t=ehttps&plabel=youtube.ytfe.desktop_20190212_3_RC1&pcl=233770365&vcs=ef029e42569b5156ce843203db327ffa
+                content-type: text/html; charset=utf-8
+                date: Sun, 17 Feb 2019 15:29:04 GMT
+                expires: Tue, 27 Apr 1971 19:44:06 EST
+                server: YouTube Frontend Proxy
+                status: 200
+                strict-transport-security: max-age=31536000
+                x-content-type-options: nosniff
+                x-frame-options: SAMEORIGIN
+                x-xss-protection: 1; mode=block     
+
+2)    1. http://www.ra.ethz.ch/cdstore/www8/data/2136/pdf/pd1.pdf
+      2. HTTP POST requests supply additional data from the client (browser) to the server in the message body. In contrast, GET requests include all required data in the URL. Forms in HTML can use either method by specifying method="POST" or method="GET" (default) in the <form> element. The method specified determines how form data is submitted to the server. When the method is GET, all form data is encoded into the URL, appended to the action URL as query string parameters. With POST, form data appears within the message body of the HTTP request.
+      3. http://www.posttestserver.com/
+
+3)    search and filters help me to find files in network I need and do first two parst of this H/W faster.
+
+
+4)    "Postman" - method GET
+
+      google.com: Date →Sun, 17 Feb 2019 16:41:39 GMT
+                  Expires →-1
+                  Cache-Control →private, max-age=0
+                  Content-Type →text/html; charset=ISO-8859-1
+                  P3P →CP="This is not a P3P policy! See g.co/p3phelp for more info."
+                  Content-Encoding →gzip
+                  Server →gws
+                  Content-Length →5385
+                  X-XSS-Protection →1; mode=block
+                  X-Frame-Options →SAMEORIGIN
+                  Set-Cookie →1P_JAR=2019-02-17-16; expires=Tue, 19-Mar-2019 16:41:39 GMT; path=/; domain=.google.com
+                  Set-Cookie →NID=160=gpqW6NLRsm4mSNIWO2YgAXSBju7LzMfIk3YKfCQaeFR5XHeo2wsoWC_H3lbbJVnONzuweiy9oNtBHLm26Lfy8mC3pPhLRrAE5hkBL_Hi2hsPaQ3JmF02UOmwSloVR_d1veAuyzQyAQ66-ckgXfm83GAMh4A43hi2g8Ym8fWkpE8; expires=Mon, 19-Aug-2019 16:41:39 GMT; path=/; domain=.google.com; HttpOnly
+
+5)    "Postman" - method HEAD
+
+      google.com: Date →Sun, 17 Feb 2019 16:50:09 GMT
+                  Expires →-1
+                  Cache-Control →private, max-age=0
+                  Content-Type →text/html; charset=ISO-8859-1
+                  Content-Encoding →gzip
+                  Server →gws
+                  Content-Length →5385
+                  X-XSS-Protection →1; mode=block
+                  X-Frame-Options →SAMEORIGIN
+                  Set-Cookie →1P_JAR=2019-02-17-16; expires=Tue, 19-Mar-2019 16:50:09 GMT; path=/; domain=.google.com
