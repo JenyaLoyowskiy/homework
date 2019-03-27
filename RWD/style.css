@@ -1,0 +1,359 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: auto;
+}
+body #main {
+  margin: 20px auto;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body #main header {
+  width: 100%;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-image: url(img/sss.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body #main header #navbar {
+  margin: 25px auto 0px auto;
+  width: 80%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 40px;
+  box-shadow: 0px 3px 30px 0.5px;
+  background-color: white;
+}
+body #main header #navbar #explore {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  font-size: 14px;
+}
+body #main header #navbar #explore .explore-items {
+  margin: auto 20px;
+  color: #7691af;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+body #main header #navbar #sign {
+  margin: auto 10px auto 0px;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  font-size: 14px;
+}
+body #main header #navbar #sign .sign-items {
+  margin: 0px 20px;
+  color: #7691af;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+body #main header #navbar #sign .social-logo {
+  height: 18px;
+  width: 18px;
+  margin-top: -7px;
+  margin: -7px 3px 0px 3px;
+}
+body #main header .start_challenge {
+  margin: auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+body #main header .start_challenge div {
+  margin: auto;
+  font-size: 12px;
+}
+body #main header .start_challenge button {
+  width: 80px;
+  height: auto;
+  border-radius: 30px;
+  margin: 20px auto 0px auto;
+  color: #7691af;
+  font-weight: bold;
+}
+body #main header #users-and-challenge {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body #main header #users-and-challenge #users {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 150px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+body #main header #users-and-challenge #users .user-page {
+  margin: 0px 5px 0px 5px;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50px;
+}
+body #main header #users-and-challenge #make_challenge {
+  margin-bottom: 50px;
+  margin-right: 50px;
+  color: white;
+}
+body #main #begin_your_next_climb {
+  align-items: center;
+  width: 100%;
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  font-size: 12px;
+}
+body #main #begin_your_next_climb .begin_your_climb_text {
+  margin-top: 15px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+body #main #begin_your_next_climb .begin_your_climb_text img {
+  height: 40px;
+  width: 50px;
+}
+body #main #begin_your_next_climb .begin_your_climb_text span {
+  font-size: 12px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #dedede;
+  margin-top: 3px;
+}
+body #main #begin_your_next_climb .begin_your_climb_text span #filter-button {
+  border: 0px;
+  border-radius: 30px;
+  background-color: #e5e5e5;
+  width: 60px;
+  height: 20px;
+  font-size: 12px;
+  padding-top: 0px;
+  margin: 0px 3px 0px 3px;
+}
+body #main #begin_your_next_climb #start {
+  height: 50px;
+  width: 100px;
+  font-size: 20px;
+  background-color: #2f5f7c;
+  margin: 100px auto 0px auto;
+  border-radius: 30px;
+  border: 0px solid black;
+  color: white;
+}
+body #main #events {
+  width: 100%;
+  height: 800px;
+  background-image: url(img/hicham.png);
+  background-size: cover;
+  background-position: center;
+}
+body #main #events #find-event {
+  width: 200px;
+  margin: -40px 10px 0px auto;
+}
+body #main #events #find-event input {
+  background-color: inherit;
+  border-radius: 15px;
+  border: 1px solid white;
+  text-transform: uppercase;
+  color: white;
+}
+body #main #events div {
+  color: white;
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-left: 100px;
+  font-size: 16px;
+}
+body #main #events div img {
+  vertical-align: 0px;
+  height: 13.5px;
+  width: 13.5px;
+  margin-right: 2px;
+}
+body #main #events ul {
+  margin: 50px auto 0px auto;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+body #main #events ul li {
+  margin-left: -40px;
+  display: block;
+  color: white;
+  text-transform: uppercase;
+  width: auto;
+}
+body #main #events .progress {
+  height: 3px;
+  width: 85%;
+  background-color: #8397b2;
+  margin: 15px auto;
+}
+body #main #events .progress .progress-bar {
+  background-color: white;
+  width: 88px;
+  height: 100%;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+body #main #events .event-items {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 600px;
+  margin: auto;
+}
+body #main #events .event-items #up {
+  position: relative;
+  width: 100%;
+  margin: 5px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+body #main #events .event-items #up div {
+  margin: 5px 5px;
+  padding: 0px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 250px;
+  color: #6f8ea3;
+  font-size: 10px;
+  width: auto;
+  position: relative;
+}
+body #main #events .event-items #up div button {
+  width: 50px;
+  height: 25px;
+  font-size: 12px;
+  background-color: #305f7d;
+  color: white;
+  margin-top: 20px;
+  border-radius: 15px;
+  border: 0px;
+  align-self: flex-end;
+  margin-right: 10px;
+}
+body #main #events .event-items #up div .challenge_data {
+  color: #d0d0d0;
+  font-size: 10px;
+}
+body #main #events .event-items #up div span {
+  margin-left: 10px;
+}
+body #main #events .event-items #up div span img {
+  margin-top: 5px;
+  height: 10px;
+  width: 10px;
+}
+body #main #events .event-items #up div .crazy_challenge {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 4px;
+  color: #6f8ea3;
+}
+body #main #events .event-items #up div img {
+  width: 100%;
+  height: auto;
+}
+body #main #events .event-items #down {
+  position: relative;
+  width: 100%;
+  margin: 5px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+body #main #events .event-items #down div {
+  margin: 0px 5px;
+  padding: 0px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 250px;
+  color: #6f8ea3;
+  font-size: 10px;
+  width: auto;
+  position: relative;
+}
+body #main #events .event-items #down div button {
+  width: 50px;
+  height: 25px;
+  font-size: 12px;
+  background-color: #305f7d;
+  color: white;
+  margin-top: 20px;
+  border-radius: 15px;
+  border: 0px;
+  align-self: flex-end;
+  margin-right: 10px;
+}
+body #main #events .event-items #down div .challenge_data {
+  color: #d0d0d0;
+  font-size: 10px;
+}
+body #main #events .event-items #down div span {
+  margin-left: 10px;
+}
+body #main #events .event-items #down div span img {
+  margin-top: 5px;
+  height: 10px;
+  width: 10px;
+}
+body #main #events .event-items #down div .crazy_challenge {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 4px;
+  color: #6f8ea3;
+}
+body #main #events .event-items #down div img {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 1250px) {
+  body header #navbar {
+    height: 35px;
+  }
+  body header #navbar #explore .explore-items {
+    font-size: 11px;
+  }
+  body header #navbar #sign .sign-items {
+    font-size: 11px;
+  }
+  body #events {
+    height: 1200px;
+  }
+  body #events #up {
+    flex-wrap: wrap;
+  }
+  body #events #up div {
+    margin-top: 10px;
+  }
+  body #events #down {
+    flex-wrap: wrap;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
