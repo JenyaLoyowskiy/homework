@@ -1,37 +1,12 @@
-/*function printTimeout(str, n) {
+//Завлання 1
+
+function printTimeout(str, n) {
 	setTimeout(function () {
 		return(str);
 	}, n);
 	console.log(str);
 }
 printTimeout('hello', 10);
-*/
-
-let printStairs2 = function(n) {
-  for (var i = 0;i <n;i++) {
-    let str = '';
-    for (var j = 0; j<n-i ;j++) {
-      str+= ' ';
-    }
-    for (var k=0;k<=(i*2);k++) {
-      str+= '#';
-    }
-    console.log(str);
-  }
-}
-printStairs2(20);
-
-function printTimeout(str, n) {
-
-   let fff = setInterval(otherFunc, 10000);
-
-    function otherFunc() {
-        console.log('Hello');
-    }
-    return str;
-}
-console.log(printTimeout('Hello', 10));
-
 
 // Завдання 2
 function sumAll(n) {
