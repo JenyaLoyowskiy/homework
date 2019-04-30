@@ -80,4 +80,4 @@ class timer {
 }
 
 new timer(10);
-new timer(180, true, 3);
+new timer(180, true, 2);
