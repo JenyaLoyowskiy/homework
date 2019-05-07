@@ -1,0 +1,60 @@
+.block{
+  margin-top: 10px;
+  margin-right: 20px;
+  background-color: #596ddc;
+  font-style: oblique;
+  font-weight: bold;
+  height: 65px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.form{
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 110px;
+  background-color: #5dd84e;
+}
+.delBtn{
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 265px;
+  background-color: #e35353;
+  border-radius: 15px;
+  font-weight: bold;
+}
+.container{
+  height: auto;
+  width: auto;
+  background-color: #333;
+}
+.info{
+  margin: 10px auto auto 10px;
+}
+.button{
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #ffaa2c;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+.input{
+  margin: auto auto auto 10px;
+  font-family: cursive;
+}
+.input input{
+  border-radius: 15px;
+  border: none;
+  width: 250px;
+  font-size: 20px;
+}
+.error{
+  border: 3px solid red !important;
+  transition: 0.1s;
+}
