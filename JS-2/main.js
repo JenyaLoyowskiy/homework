@@ -1,113 +1,133 @@
-//Завлання 1
+// function printTimeout(str, n) {
+//   setTimeout(()=>{
+//     console.log(str);
+//   },n*1000);
+// }
+// printTimeout('hello',3)
 
-function printTimeout(str, n) {
-	setTimeout(function () {
-		return(str);
-	}, n);
-	console.log(str);
-}
-printTimeout('hello', 10);
+// function sumAll(n){
+//   if (n == 1) {
+//     return n;
+//   }
+//   return n + sumAll(n-1);
+// }
 
-// Завдання 2
-function sumAll(n) {
-    if (n == 1){
-        return 1;
-    }
-    return n + sumAll(n - 1);
-}
-console.log(sumAll(1));
-console.log(sumAll(2));
-console.log(sumAll(3));
-console.log(sumAll(4));
-console.log(sumAll(5));
-console.log(sumAll(100));
+// function bombTimer(str, time){
+//     let counter = setInterval(()=>{
+//       if (time == 0) {
+//         clearInterval(counter)
+//         console.log(str);
+//       }else {
+//         console.log(time);
+//         time--;
+//       }
+//     }, 1000)
+// }
 
+// function factorial(n){
+//   if (n == 1) {
+//     return n;
+//   }else {
+//     return n + factorial(n-1);
+//   }
+// }
 
-// Завдання 3
-function bombTimer(str, time) {
-let i = time;
-    while (time = 3) {
-        time--;
-        console.log(i);
-}
-    if (time = 0){
-        console.log(str);
-    }
-}
+// function bombTimer_2(str,n){
+//   setTimeout(()=>{
+//     if (n == 0) {
+//       console.log(str);
+//     }else {
+//       console.log(n);
+//       bombTimer_2(str, n-1)
+//     }
+//   },1000)
+// }
 
+// function filterNumbers(arr, maxNumber){
+//   let newArr = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i]<maxNumber) {
+//       newArr.push(arr[i]);
+//     }
+//   }
+//   console.log(newArr);
+// }
+// filterNumbers([1,4,6,23,6,6], 10);
 
-// Завдання 4
-function factorial(n) {
-    if (n == 1){
-        return 1;
-    }
-    return n * sumAll(n - 1);
-}
-console.log(factorial(1));
-console.log(factorial(2));
-console.log(factorial(3));
-console.log(factorial(4));
-console.log(factorial(5));
-console.log(factorial(6));
+// function minMax(arr) {
+//   let result = {min: arr[0], max: arr[0]};
+//     arr.forEach(item=>{
+//       if (item>result.max) {
+//         result.max = item;
+//       }
+//       if (item<result.min) {
+//         result.min = item;
+//       }
+//     })
+//     console.log(result);
+// }
 
+// function average(arr){
+//   let sum = arr.reduce((total, item) => total+item)
+//   console.log(sum/arr.length);
+// }
+// average([12,3]);
 
-// Завдання 5
-let counter = 3;
-let fff = setInterval(function(){
-    console.log(counter);
-    counter--;
-    if (counter === 0) {
-        console.log('Boooooom')
-        clearInterval(fff);
-    }
-}, 2000);
+// function concatFirstNestedArrays(arr){
+//   let newArr = arr.reduce((a,b)=>{
+//     return a.concat(b);
+//   });
+// return newArr;
+// }
+// console.log(concatFirstNestedArrays([[1,2],[2,3],[3,4]]));
 
+// const users = [
+//   { id: 1, name: 'John', birthday: '1999-2-12' },
+//   { id: 2, name: 'Bill', birthday: '1999-1-19' },
+//   { id: 3, name: 'Carol', birthday: '1999-3-11' },
+//   { id: 4, name: 'Luce', birthday: '1999-2-22' }
+// ];
 
-// Завдання 6
-function filterNumbers(arr, maxNumber) {
-let i;
-    for ( i = 0; i < arr.length; i++) {
-        if (arr[i] < maxNumber) {
-            console.log([arr[i]]);
-        }
-    }
+// function usersToObject(users) {
+//   let newUsers = {};
+//     users.forEach((user)=>{
+//       newUsers[user.id] = user;
+//     })
+//     console.log(newUsers);
+// }
+// usersToObject(users);
 
-}
-console.log(filterNumbers([1, 4, 8, 1, 20], 5));
+// const users = [
+//   { name: 'John', birthday: '1999-2-12' },
+//   { name: 'Bill', birthday: '1999-1-19' },
+//   { name: 'Carol', birthday: '1999-4-11' },
+//   { name: 'Luce', birthday: '1999-2-22' }
+// ];
 
+// function filterUsersByMonth(users, month) {
+//   let newUsers = [];
+//   users.forEach((user)=>{
+//     if (user.birthday[5] == month) {
+//       newUsers.push(user);
+//     }
+//   })
+//   console.log(newUsers);
+// }
+// filterUsersByMonth(users, 4);
 
-// Завдання 7
-function minMax(arr) {
-    let result = [];
-        let maxValue = arr.reduce(function(a, b) {
-            return Math.max(a, b);
-        });
-        let minValue = arr.reduce(function(a, b) {
-            return Math.min(a, b);
-        });
-        result = [maxValue, minValue];
-        console.log(result);
-    }
-
-console.log(minMax([1, 4, 8, 2, 20]));
-
-
-// Завдання 8
-function average(arr) {
-    let numbers = arr;
-    let total = numbers.reduce( (accumulator, currentValue) => accumulator + currentValue);
-    let c = total / arr.length;
-return c;
-}
-
-console.log(average([1,4,2]));
-
-
-// Завдання 9
-function concatFirstNestedArrays(arr) {
-    let newAr = arr.reduce(function (a,b) {
-        return a.concat(b);
-    })
-return newAr;
-}
-console.log(concatFirstNestedArrays([[0, 1], [2, 3], [4, 5]]));
+// const users = [
+//   { name: 'John', birthday: '1999-6-12' },
+//   { name: 'Bill', birthday: '2005-5-19' },
+//   { name: 'Carol', birthday: '2003-10-11' },
+//   { name: 'Luce', birthday: '2000-11-22' }
+// ];
+//
+// function getAdultNames(users) {
+//   users.forEach((user)=>{
+//     let age = 2019-user.birthday.slice(0,4);
+//     if (age>18) {
+//       console.log(user.name +' '+ age);
+//     }
+//   })
+// }
+// getAdultNames(users)
