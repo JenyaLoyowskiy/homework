@@ -37,3 +37,8 @@ p{
   width: 45px;
   height: 220px;
 }
+.red{
+  border: 5px solid red;
+  width: 45px;
+  height: 220px;
+}
